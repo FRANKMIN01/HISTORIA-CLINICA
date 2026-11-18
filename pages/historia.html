@@ -7,21 +7,24 @@
     <title>HOSTIPAL QUITO</title>
 </head>
 <body>
-    <!--CABECERA-->
     <header>
         <h1 style="text-align: center;">HOSPITAL QUITO</h1>
         <P style="text-align: center;">Tu salud en las mejores manos</P>
     </header>
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/pages/historia.html">Llenar historia clinica</a>
+    </nav>
     <hr>
     <h2 style="text-align: center;">REGISTRO DE HISTORIA CLINICA</h2>
     <form action="#">
-        <label for="fecha">Ingrese la fecha:</label>
+        <label for="fecha">Ingrese la fecha y hora de ingreso:</label>
         <br><br>
-        <input type="date" id="fecha" >
+        <input type="datetime-local" id="fecha" >
         <br><br>
-        <label for="Numero_historia">Ingrese el número de historia clínica:</label>
+        <label for="numero_historia">Ingrese el número de historia clínica:</label>
         <br><br>
-        <input type="number" id="numero_historia" placeholder="9999-9999" required>
+        <input type="number" id="numero_historia" placeholder="999-999-999" required>
         <br><br>
         <label for="nombre">Ingrese el nombre:</label>
         <br><br>
@@ -41,21 +44,44 @@
         <br><br>
         <textarea name="comentarios" id="consulta" rows="4" cols="50" placeholder="Motivo de consulta"></textarea>
         <br><br>
-        <label for="Alcohol">Alcohol:</label>
+        <label for="peso">Ingrese el peso en Kg:</label>
         <br><br>
-        <label for="No"><input type="radio" id="Alcohol" name="Alcohol">No</label>
-        <label for="Si"><input type="radio" id="AlcoholSi" name="Alcohol">Si</label>
+        <input type="number" id="peso" placeholder="Peso" required>
         <br><br>
-        <label for="alcohol">Alcohol:</label>
+        <label for="talla">Ingrese la talla en cm:</label>
         <br><br>
-        <label for="No"><input type="radio" id="masculino" name="genero">No</label>
-        <label for="Si"><input type="radio" id="femenino" name="genero">Si</label>        <br><br>
-        <label for="alcohol">Alcohol:</label>
+        <input type="number" id="talla" placeholder="Talla" required>
         <br><br>
-        <label for="No"><input type="radio" id="masculino" name="genero">No</label>
-        <label for="Si"><input type="radio" id="femenino" name="genero">Si</label>
-        
-      
+        <label for="presion">Ingrese la presion arterial:</label>
+        <br><br>
+        <input type="text" id="presion" placeholder="Presion arterial" required>
+        <br><br>
+        <label for="pulso">Ingrese pulso:</label>
+        <br><br>
+        <input type="number" id="pulso" placeholder="Pulso" required>
+        <br><br>
+        <label for="alcohol">¿Consume bebidas alcoholica?</label>
+        <br><br>
+        <label for="No"><input type="radio" id="alcohol" name="Alcohol">No</label>
+        <label for="Si"><input type="radio" id="alcohol" name="Alcohol">Si</label>
+        <br><br>
+        <label for="drogas">¿Consume grogas?</label>
+        <br><br>
+        <label for="No"><input type="radio" id="drogas" name="Drogas">No</label>
+        <label for="Si"><input type="radio" id="drogas" name="Drogas">Si</label>       
+        <br><br>
+        <label for="fuma">¿Fuma?</label>
+        <br><br>
+        <label for="No"><input type="radio" id="fuma" name="Fuma">No</label>
+        <label for="Si"><input type="radio" id="fuma" name="Fuma">Si</label>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button type="reset">Limpiar</button>
     </form>
+    <hr>
+    <footer>
+        <p>&copy; 2026 Franklin</p>
+        <address>Quito, Ecuador</address>
+    </footer>
 </body>
 </html>
