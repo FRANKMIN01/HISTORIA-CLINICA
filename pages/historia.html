@@ -24,11 +24,19 @@
         <br><br>
         <label for="numero_historia">Ingrese el número de historia clínica:</label>
         <br><br>
-        <input type="number" id="numero_historia" placeholder="999-999-999" required>
+        <input type="number" id="numero_historia" placeholder="999-999" required>
         <br><br>
         <label for="nombre">Ingrese el nombre:</label>
         <br><br>
         <input type="text" id="nombre" placeholder="Nombre" size="10" required>
+        <br><br>
+        <label for="ci">Ingrese Ci:</label>
+        <br><br>
+        <input type="number" id="ci" placeholder="999999999-9" required>
+        <br><br>
+        <label for="correo">Ingrese correo:</label>
+        <br><br>
+        <input type="email" id="correo" placeholder="Correo" size="10">
         <br><br>
         <label for="edad">Ingrese la edad:</label>
         <br><br>
@@ -75,12 +83,28 @@
         <label for="No"><input type="radio" id="fuma" name="Fuma">No</label>
         <label for="Si"><input type="radio" id="fuma" name="Fuma">Si</label>
         <br><br>
+        <label for="sintomas">Seleccione los sintomas que tiene:</label>
+        <br><br>
+        <label for="sintomas"><input type="checkbox" id="sintomas" name="Fiebre">Fiebre</label>
+        <label for="sintomas"><input type="checkbox" id="sintomas" name="Catarro">Catarro</label>
+        <label for="sintomas"><input type="checkbox" id="sintomas" name="Dolor">Dolor de cabeza</label>
+        <label for="sintomas"><input type="checkbox" id="sintomas" name="Dolor">Dolor de extremidades</label>
+        <label for="sintomas"><input type="checkbox" id="sintomas" name="Nauseas">Nauseas</label>
+        <br><br>
+        <label for="hora">Ingrese hora estimada de atención:</label>
+        <br><br>
+        <input type="time" id="hora">
+        <br><br>
+        <label for="prioridad">Nivel de priodidad de anteción:</label>
+        <br><br>
+        <input type="range" min="1" max="100" id="prioridad">
+        <br><br>
         <input type="submit" value="Enviar">
         <button type="reset">Limpiar</button>
     </form>
     <hr>
     <footer>
-        <p>&copy; 2026 Franklin</p>
+        <p>&copy; 2026 Franklin Minxhala</p>
         <address>Quito, Ecuador</address>
     </footer>
 </body>
